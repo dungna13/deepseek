@@ -8,7 +8,7 @@ import base64
 app = FastAPI()
 
 # Cấu hình API Key (thay YOUR_GEMINI_API_KEY bằng key của bạn)
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCCT5W1XNAWOKaqKj5cYc1MnQPfv64ebSA"
+os.environ["GOOGLE_API_KEY"] = "Your_API"
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def encode_image(image_file):
